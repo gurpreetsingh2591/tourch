@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlCarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_toStartOf="@+id/rideStatus"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/lightDarkGray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cost"
+                            android:maxLength="6"/>
+
+                        <TextView
+                            android:id="@+id/cost"
+                            style="@style/mediumBlack14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="6"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/_55_00" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorE9E9ED" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_weight=".7"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/lightDarkGray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date-Time" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            style="@style/lightDarkGray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="28.07.2022 - 2:00 PM" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rideStatus"
+                    style="@style/mediumBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="Completed"
+                    android:textColor="#32B67A" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/rlCarDetail">
+
+        <View
+            android:id="@+id/viewYellow"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@drawable/bg_circle_yellow" />
+
+        <View
+            android:id="@+id/viewDot"
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewYellow"
+            android:layout_alignBottom="@+id/tvDrop"
+            android:background="@drawable/bg_dotted_line_grey" />
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_alignBottom="@+id/tvDrop"
+            android:background="@drawable/ic_bg_circle_blue" />
+
+        <TextView
+            android:id="@+id/tvPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/pickup"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/tvPickUpAddress"
+            style="@style/regularBlack12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPick"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/_4140_parker_rd_allentown_dallas" />
+
+        <TextView
+            android:id="@+id/tvDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPickUpAddress"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/drop_off"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/tvDropOffAddress"
+            style="@style/regularBlack12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDrop"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/_4140_parker_rd_allentown_dallas" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorE9E9ED"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

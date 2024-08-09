@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mapVi"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-45dp"
+        tools:ignore="FragmentTagUsage" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/mediumBlack14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:paddingTop="@dimen/_50sdp"
+        android:text="@string/near_your_location" />
+
+    <TextView
+        style="@style/regularBlack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_white"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:text="@string/hi_jane" />
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_above="@+id/in_destination"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_circle_green"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_more"
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivSecurityCenter"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_above="@+id/in_destination"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_security"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <include
+        android:id="@+id/in_destination"
+        layout="@layout/layout_enter_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/in_getStarted"
+        layout="@layout/layout_get_strat_intercity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/in_fullDetail2"
+        layout="@layout/dialog_rider_full_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                style="@style/mediumBlack18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:text="@string/tourch_freebies" />
+
+            <TextView
+
+                style="@style/lightDarkGray12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:text="@string/earn_more_save_more_make_every_trip_count_and_get_more" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/ivStar"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_star_green" />
+
+                <TextView
+                    style="@style/mediumBlack12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivStar"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/freebies_credit" />
+
+                <TextView
+                    style="@style/mediumBlack12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/_55_00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp">
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorE9E9ED" />
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorE9E9ED" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/ivAddRef"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_add_referral"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    style="@style/mediumBlack12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivAddRef"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="Friends Invited" />
+
+                <TextView
+                    style="@style/mediumBlack12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="57" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp">
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorE9E9ED" />
+
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/colorE9E9ED" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@drawable/bg_edit_text"
+                android:backgroundTint="@color/color32B67A"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/ivCopy"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_copy_text"
+                    app:tint="@color/white" />
+
+                <TextView
+                    style="@style/regularWhite12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCopy"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/total_earnings" />
+
+                <TextView
+                    style="@style/regularWhite12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/_55_00" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:text="@string/next_target" />
+
+            <TextView
+                style="@style/lightDarkGray12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:text="@string/to_earn_5_credit_you_must_complete_your_next_target" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <ImageView
+
+                    android:id="@+id/ivProgress"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_progress" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivProgress"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvTrips"
+                        style="@style/mediumBlack12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="2/8 trips completed" />
+
+                    <TextView
+                        style="@style/lightDarkGray12"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Complete 8 trips and get $5 credit" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:text="Referrals" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edit_text"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/mediumBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invite_and_earn_even_more" />
+
+                <TextView
+                    style="@style/lightDarkGray12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/earn_10_ride_credit" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_corner"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        style="@style/lightDarkGray12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/code"
+                        tools:ignore="PrivateResource" />
+
+                    <TextView
+                        android:id="@+id/tvReferralCode"
+                        style="@style/mediumBlack12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tvCode"
+                        android:text="@string/tourch178342355637536"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/ic_copy_text"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        style="@style/mediumBlue14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_to_referrals" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:src="@drawable/ic_arrow_forward"
+                        app:tint="#0084FE" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/bg_btn_border_blue"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/mediumBlue14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Freebies History" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/bg_btn_border_blue"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/mediumBlue14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite History" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

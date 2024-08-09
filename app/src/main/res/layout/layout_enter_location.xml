@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_black" />
+
+                <TextView
+                    android:id="@+id/tvDoneDialog"
+                    style="@style/mediumBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:text="@string/done" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPickUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/bg_edit_text"
+                android:paddingHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivPin"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_map_pickup"
+                    app:tint="@color/color7C7D8F" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivPin"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/pick_up"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintTextColor="@color/color8C8C9C">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edPickUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:text="@string/your_location"
+                        android:textCursorDrawable="@drawable/bg_cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDropOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDPin"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_map_pickup"
+                        app:tint="@color/color7C7D8F" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivDPin"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/drop_off"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintTextColor="@color/color_grey">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edDropOff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/bg_cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivStopVisible"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_plus"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDropOff2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDPin2"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_map_pickup"
+                        app:tint="@color/color7C7D8F" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivDPin2"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/stop_2"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintTextColor="@color/color_grey">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edDropOff2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/bg_cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivStopGone2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_minus_bg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDropOff3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDPin3"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_map_pickup"
+                        app:tint="@color/color7C7D8F" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivDPin3"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/stop_3"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintTextColor="@color/color_grey">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edDropOff3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/bg_cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivStopGone3"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_minus_bg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDropOff4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDPin4"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_map_pickup"
+                        app:tint="@color/color7C7D8F" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivDPin4"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/stop_4"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintTextColor="@color/color_grey">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edDropOff4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/bg_cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivStopGone4"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_minus_bg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDropOff5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDPin5"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_map_pickup"
+                        app:tint="@color/color7C7D8F" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivDPin5"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/stop_5"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintTextColor="@color/color_grey">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edDropOff5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/bg_cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivStopGone5"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_minus_bg" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_55sdp"
+                android:background="@drawable/bg_box_border"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/rgPassenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:checkedButton="@+id/offer"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    tools:ignore="UselessParent">
+
+                    <RadioButton
+                        android:id="@+id/rbOne"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_airport"
+                        android:button="@null"
+                        android:checked="true"
+                        android:fontFamily="@font/sf_regular"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:text="@string/parking"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_airport"
+                        android:button="@null"
+                        android:fontFamily="@font/sf_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/terminals"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorE9E9ED" />
+
+                    <RadioButton
+                        android:id="@+id/rbThree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_airport"
+                        android:button="@null"
+                        android:fontFamily="@font/sf_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/airlines"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorE9E9ED"
+                    android:paddingHorizontal="@dimen/_5sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvParking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTerminals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAirlines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        tools:itemCount="3" /><!--
+                        tools:listitem="@layout/item_airport"-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorE5e5e5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlYourLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp">
+
+                    <ImageView
+                        android:id="@+id/ivYourLoc"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/crosshairs" />
+
+                    <TextView
+                        style="@style/regularBlack14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivYourLoc"
+                        android:text="@string/your_location" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:background="#E9E9EC" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp">
+
+                    <ImageView
+                        android:id="@+id/ivSetLoc"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/set_loc_on_map_icon" />
+
+                    <TextView
+                        style="@style/regularBlack14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivSetLoc"
+                        android:text="@string/set_location_on_map" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:background="#E9E9EC" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivSavedPlace"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/bookmark" />
+
+                    <TextView
+                        android:id="@+id/tvAddSaved"
+                        style="@style/regularBlack14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivSavedPlace"
+                        android:text="@string/add_saved_place" />
+
+                    <TextView
+                        style="@style/lightDarkGray12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAddSaved"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toEndOf="@+id/ivSavedPlace"
+                        android:text="Get to your favorite destination faster" />
+
+                    <ImageView
+                        android:id="@+id/ivArrow"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_arrow_forward_gray" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:background="#E9E9EC" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPlaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_16sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

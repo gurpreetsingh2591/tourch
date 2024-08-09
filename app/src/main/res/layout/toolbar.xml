@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:paddingHorizontal="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/_5sdp"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLeftIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_black"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:background="@drawable/bg_circle_white"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_menu"
+            android:visibility="invisible"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/regularPrimary18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_logo_green"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_circle_white"
+            android:id="@+id/imgNotification"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:src="@drawable/ic_notification"
+            android:visibility="gone" />
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/imgaddUser"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/empty_person_plus"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvNotifynum"
+            style="@style/tvBookWhite10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:background="@drawable/bg_circle"
+            android:backgroundTint="@color/colorE02020"
+            android:gravity="center"
+            android:text="2"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_6sdp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

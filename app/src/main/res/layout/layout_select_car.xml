@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_corner_white"
+        android:minHeight="@dimen/_130sdp"
+        tools:ignore="UselessParent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#D3D4DA" />
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/mediumBlack14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/back" />
+
+        <RelativeLayout
+            android:id="@+id/rlNow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/tvBack"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/llNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_schedule"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/mediumBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/now" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_arrow_down"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/rlChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_profile"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvChoose"
+                        style="@style/mediumBlack14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/myself" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <com.tourch.utils.widgets.NDSpinner
+                    android:id="@+id/spChooseRideFor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llSelection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/rlNow"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rgPassenger"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:checkedButton="@+id/offer"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/rbGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ride_selection"
+                    android:button="@null"
+                    android:checked="true"
+                    android:fontFamily="@font/sf_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="@string/go"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rbShared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ride_selection"
+                    android:button="@null"
+                    android:fontFamily="@font/sf_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="@string/shared"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rbLuxury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ride_selection"
+                    android:button="@null"
+                    android:fontFamily="@font/sf_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="@string/luxury"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/regularPrimary12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_green"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/go" />
+
+            <TextView
+                style="@style/regularPrimary12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/shared"
+                android:textColor="@color/color_grey" />
+
+            <TextView
+                style="@style/regularPrimary12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/luxury"
+                android:textColor="@color/color_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/llFemaleDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSelection"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prefer_female_driver"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llSharedRide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_layout_blue"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        app:switchPadding="@dimen/_10sdp" />
+
+                    <TextView
+                        style="@style/mediumBlack12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/share_your_ride" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_ride_will_cost_less_if_another_rider_is_found_heading_towards_the_same_destination" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvServiceSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFemaleDriver"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            tools:itemCount="1"
+            android:orientation="horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCarsSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rvServiceSelection"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            tools:itemCount="1"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_select_car" />
+
+        <LinearLayout
+            android:id="@+id/llPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rvCarsSelection"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/choose_payment_method" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rlAddCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+
+                    <ImageView
+                        android:id="@+id/ivCard"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/visa_card" />
+
+                    <TextView
+                        android:id="@+id/tvCardNo"
+                        style="@style/mediumBlack16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/ivCard"
+                        android:text="****1234" />
+
+                    <ImageView
+                        android:id="@+id/ivArrow"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/tvCardNo"
+                        android:src="@drawable/ic_arrow_forward_gray" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivDiscount"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_discount" />
+
+                    <TextView
+                        android:id="@+id/tvDiscount"
+                        style="@style/regularDarkGray14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="@string/discount" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/color_grey" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_dots" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBookNow"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/llPayment"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="@string/book_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="@dimen/_10sdp"
+            app:rippleColor="@color/color38D169"
+            tools:ignore="PrivateResource" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

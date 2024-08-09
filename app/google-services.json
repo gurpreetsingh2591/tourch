@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "408627879274",
+    "firebase_url": "https://tourch-568be-default-rtdb.firebaseio.com",
+    "project_id": "tourch-568be",
+    "storage_bucket": "tourch-568be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408627879274:android:52882398f2b1ccb6a61913",
+        "android_client_info": {
+          "package_name": "com.tourch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408627879274-vetb2c4j2ca3edk3am3h2ck3nnhf9c2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0qLYaIHPF1_V4bR4Lh-zf7eFk1YRRdP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408627879274-vetb2c4j2ca3edk3am3h2ck3nnhf9c2g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408627879274-f9dj7c9o0nd6ljcrk2odmq07ug6qocj0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tourch"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408627879274:android:19252a8289c098a6a61913",
+        "android_client_info": {
+          "package_name": "com.tourch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408627879274-mggkngv0m0f5sebgaktp3b5pn8jin2rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tourch",
+            "certificate_hash": "3817e75307f3b13273b026446c219cda57c7f5b4"
+          }
+        },
+        {
+          "client_id": "408627879274-n8gd7fu41hgqm56m8fd80opojgc6da3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tourch",
+            "certificate_hash": "5ccc1876cf8aadb29245495663fa068a841f7dbd"
+          }
+        },
+        {
+          "client_id": "408627879274-qciuavq30qs88062f65qb5a8l2gqreen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tourch",
+            "certificate_hash": "79b5c6352adc77190c7fea6f3f02709217e21cc8"
+          }
+        },
+        {
+          "client_id": "408627879274-vetb2c4j2ca3edk3am3h2ck3nnhf9c2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0qLYaIHPF1_V4bR4Lh-zf7eFk1YRRdP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408627879274-vetb2c4j2ca3edk3am3h2ck3nnhf9c2g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408627879274-f9dj7c9o0nd6ljcrk2odmq07ug6qocj0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tourch"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

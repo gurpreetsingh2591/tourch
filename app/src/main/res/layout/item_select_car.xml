@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLay"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_edit_grey"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:padding="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/ivCars"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_car" />
+
+    <LinearLayout
+        android:id="@+id/llTourchGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCars"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tvCarName"
+            style="@style/mediumBlack14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tourch_go" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_info_grey"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSeats"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/llTourchGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_person_green"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/tvCarSeats"
+            android:layout_marginStart="@dimen/_5sdp"
+            style="@style/mediumDarkGray12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_seats" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTime"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/llSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_clock_green"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/tvCarTime"
+            android:layout_marginStart="@dimen/_5sdp"
+            style="@style/mediumDarkGray12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_min_away" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llEstimate"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/llTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#32B67A"
+            android:id="@+id/tvEstimate"
+            android:layout_marginStart="@dimen/_5sdp"
+            style="@style/mediumDarkGray14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:text="$2344" />
+    </LinearLayout>
+
+</RelativeLayout>

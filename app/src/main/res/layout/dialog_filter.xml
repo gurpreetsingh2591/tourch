@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <RelativeLayout
+        android:id="@+id/rlClose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_close_black"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvDone"
+            style="@style/regularBlack12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/done"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNoOfFilters"
+        style="@style/regularBlack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlClose"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/applied_filters"
+        tools:ignore="RelativeOverlap" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNoOfFilters"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/tvSelectPrice"
+        style="@style/regularBlack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/select_price_range"
+        tools:ignore="RelativeOverlap" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rsPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:stepSize="10.0"
+        android:valueFrom="20.0"
+        android:valueTo="230.0"
+        app:labelBehavior="visible"
+        app:labelStyle="@style/tooltip"
+        app:thumbColor="#FFFFFF"
+        app:thumbStrokeColor="@color/color32B67A"
+        app:thumbStrokeWidth="3dp"
+        app:tickVisible="false"
+        app:trackColorActive="@color/color32B67A"
+        app:trackColorInactive="#D3D4DA"
+        app:values="@array/initial_slider_values" />
+    <RelativeLayout
+
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="horizontal"
+        android:id="@+id/llRangePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="$20"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:text="$230"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPassenger"
+        style="@style/regularBlack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/passengers"
+        tools:ignore="RelativeOverlap" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llPassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RadioGroup
+            android:id="@+id/rgPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal"
+
+            android:padding="@dimen/_2sdp"
+            android:weightSum="6"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/rbOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter"
+                android:button="@null"
+
+                android:drawableStart="@drawable/ic_person3"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <RadioButton
+                android:id="@+id/rbTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter"
+                android:button="@null"
+                android:drawableTint="@color/black"
+                android:drawableStart="@drawable/ic_person3"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <RadioButton
+                android:id="@+id/rbThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTint="@color/black"
+                android:background="@drawable/bg_filter"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_person3"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <RadioButton
+                android:id="@+id/rbFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:drawableTint="@color/black"
+                android:background="@drawable/bg_filter"
+                android:button="@null"
+                android:drawableStart="@drawable/ic_person3"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="4"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <RadioButton
+                android:id="@+id/rbCustom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_filter"
+                android:button="@null"
+                android:drawableTint="@color/black"
+                android:drawableStart="@drawable/ic_person3"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/custom"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </RadioGroup>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+
+        android:id="@+id/tvSearchArea"
+        style="@style/regularBlack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPassenger"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/search_area"
+        tools:ignore="RelativeOverlap" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchArea"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <GridView
+            android:id="@+id/gvSearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/_5sdp"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/_5sdp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_top_corner_white">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#D3D4DA" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/ic_account_edit"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivSearchTourch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@+id/ivEdit"
+        android:src="@drawable/search_tourch"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvFinding"
+        style="@style/mediumBlack20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivSearchTourch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/finding_your_driver" />
+
+    <TextView
+        android:id="@+id/tvSubFinding"
+        style="@style/lightDarkGray12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFinding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/this_may_take_upto_2_min_please_wait_while_we_are_finding_your_ride" />
+
+    <TextView
+        android:id="@+id/tvPickUpTiming"
+        style="@style/mediumBlue14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSubFinding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Pick up by 8:30 - 8:45"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPickUpTiming"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.ncorti.slidetoact.SlideToActView
+                app:animate_completion="false"
+                android:id="@+id/example_gray_on_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:elevation="6dp"
+                app:animation_duration="250"
+                app:area_margin="4dp"
+                app:border_radius="50dp"
+                app:inner_color="@color/white"
+                app:outer_color="#EEEEF2"
+                app:slider_height="80dp"
+                app:slider_icon="@drawable/ic_ic_close_black"
+                app:slider_icon_color="@color/black"
+                app:slider_locked="false"
+                app:text="Slide to Cancel"
+                app:text_color="@color/black"
+                app:text_size="18sp" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_double_forward"
+
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+</RelativeLayout>

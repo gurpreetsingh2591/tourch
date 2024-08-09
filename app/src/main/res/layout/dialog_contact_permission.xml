@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlTurnOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:padding="@dimen/_16sdp">
+
+
+        <ImageView
+            android:id="@+id/ivContacts"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_contacts_user" />
+
+        <TextView
+            android:id="@+id/tvFindContactMsg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivContacts"
+            style="@style/mediumBlack14"
+            android:text="@string/find_your_phone_contacts_on_tourch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvMsgDetail"
+            style="@style/lightDarkGray12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFindContactMsg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_ut_aliquam_purus_sit" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvMsgDetail"
+            android:background="@color/colorE9E9ED"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tvTurnOn"
+            style="@style/mediumBlue14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/turn_on" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/rlTurnOn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_white_corner">
+
+        <TextView
+            android:id="@+id/tvTurnOff"
+            style="@style/mediumBlue14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:gravity="center"
+            android:text="@string/turn_off" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

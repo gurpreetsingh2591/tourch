@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/ivProgress"
+        android:src="@drawable/ic_circle_uncheck"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp" />
+    <View
+
+        android:layout_below="@+id/ivProgress"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_alignBottom="@+id/rlDriverInfo"
+        android:id="@+id/viewProgress"
+        android:layout_width="1dp"
+        android:background="@color/color_grey"
+        android:layout_height="wrap_content" />
+        <RelativeLayout
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/ivProgress"
+            android:id="@+id/rlDriverInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llInfo"
+                android:paddingEnd="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_toStartOf="@+id/ivDriverInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    style="@style/mediumBlack16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Step 1: Driver Information" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    style="@style/lightDarkGray10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam." />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txtCompletion"
+                    android:textColor="#0084FE"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    style="@style/lightBlack10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only 10% Completed" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivDriverInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_forward"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp" />
+
+            <View
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:layout_below="@+id/llInfo"
+                android:background="@color/colorDivider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </RelativeLayout>
+
+
+</RelativeLayout>

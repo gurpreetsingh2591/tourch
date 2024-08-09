@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottomButton"
+        android:layout_below="@+id/inToolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llHaveCar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_15sdp"
+                tools:itemCount="1"
+                tools:listitem="@layout/layout_verification_stepes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_15sdp"
+                tools:ignore="RtlSymmetry">
+
+
+                <TextView
+                    style="@style/mediumBlack16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Step 4: Driver Consent" />
+
+                <TextView
+                    style="@style/lightDarkGray10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="We'll need your consent to complete a criminal background check and to review your driving history. Please note: this is not a credit check." />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_15sdp"
+                tools:ignore="RtlSymmetry">
+
+
+                <TextView
+                    style="@style/mediumBlack16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Federal Background Check Disclosures" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    style="@style/lightDarkGray10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="A consumer report is a type of background check in which information (which may include, but is not limited to, criminal background, driving reports/background, character, general reputation personal characteristics, and mode of living) about you is gathered and communicated by a consumer reporting agency to Tourch Plus, Inc. and/or Its subsidiaries, affiliates, other related entities. successors, and/or assigns (collectively or individually, as appropriate, the Company*). Company may obtain a consumer report on you to be used for the purpose of evaluating you in connection with your application or continued eligibility to be a driver on the Tourch platform" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_15sdp"
+                tools:ignore="RtlSymmetry">
+
+
+                <TextView
+                    style="@style/mediumBlack16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Background Check Authorization" />
+
+                <TextView
+                    style="@style/lightDarkGray10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="By clicking the button below, I authorize Company to procure consumer reports) (including criminal and driving reports) on me to be used for the purpose of evaluating me in connection with my application." />
+
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAuthorize"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:gravity="center"
+                android:text="Authorize"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:backgroundTint="@color/color979797"
+                app:cornerRadius="@dimen/_25sdp"
+
+                app:rippleColor="@color/color38D169"
+                tools:ignore="PrivateResource" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlBottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_16sdp">
+
+        <LinearLayout
+
+            android:id="@+id/llBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/bg_circle_back"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect_circle"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+                app:tint="@color/colorPrimary"
+                tools:ignore="ContentDescription,PrivateResource" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:backgroundTint="@color/color979797"
+            app:cornerRadius="@dimen/_25sdp"
+            app:icon="@drawable/ic_next_arrow_primary"
+            app:iconGravity="textEnd"
+            app:iconTint="#fff"
+            app:rippleColor="@color/color38D169"
+            tools:ignore="PrivateResource" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

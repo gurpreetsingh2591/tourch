@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPromo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/bg_edit_grey"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvPercentOff"
+            style="@style/mediumBlack12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35% Off" />
+
+        <TextView
+            android:id="@+id/tvPromoCode"
+            style="@style/lightDarkGray10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOff"
+            android:text="Code: Tourch 19.  Exp: Aug 14,2022" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_radio_unselect_grey"
+        android:id="@+id/rbSelection"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

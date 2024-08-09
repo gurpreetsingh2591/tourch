@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/llMyTrip"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_world"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/my_trips"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRideHistory"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_filled_clock"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/ride_history"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/llWallet"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_wallet"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/wallet"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDList"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_driver_list"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/drivers_list"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/llRef"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_referral"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/referrals"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFree"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_forbiess"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/freebies"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/llOurRoutes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:src="@drawable/ic_route"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/our_routes"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHelp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:src="@drawable/ic_help_green"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/help"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSetting"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_setting"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/mediumBlack14"
+                android:layout_width="wrap_content"
+                android:text="@string/settings"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

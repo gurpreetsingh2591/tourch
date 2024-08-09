@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">Tourch</string>
+
+    <string name="placekey">AIzaSyA0qLYaIHPF1_V4bR4Lh-zf7eFk1YRRdP8</string>
+
+    <string name="notifications_may">Notifications may include alerts and sounds. These can be configured in settings</string>
+    <string name="tourch_would">Tourch would like to send you notifications</string>
+    <string name="switch_rider">Switch Rider</string>
+    <string name="me">Me</string>
+    <string name="add_rider">Add Rider</string>
+    <string name="find_your_phone_contacts_on_tourch">Find your phone contacts on Tourch</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="phone_contacts">Phone Contacts</string>
+    <string name="driver_will_be">Driver will be able to see names, Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna.</string>
+    <string name="search_name_or_number">Search name or number</string>
+    <string name="select_date_and_time">Select Date and Time</string>
+    <string name="date_time">Date-Time</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="applied_filters">Applied Filters</string>
+    <string name="select_price_range">Select Price Range</string>
+    <string name="passengers">Passengers</string>
+    <string name="search_area">Search Area</string>
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+    <string name="add_promo_code">Add Promo Code</string>
+    <string name="apply">Apply</string>
+    <string name="custom">Custom</string>
+    <string name="_1_2_miles">½ miles</string>
+
+
+    <string name="welcome_to_tourch_ride">Welcome! to Tourch Ride</string>
+    <string name="sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</string>
+    <string name="already_have_an_account_login">Already have an account?<font color='#1762E4'> Login</font> </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">or</string>
+
+    <string name="you_want_to_join_us_as_a_driver_or_as_a_passenger">You want to join us as a driver or as a passenger?</string>
+    <string name="it_is_a_long_established_fact_that_a_reader_of_a_page_when_looking_at_its_layout">It is a long established fact that a reader of a page when looking at its layout.</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="continue_">Continue</string>
+    <string name="become_a_driver">Become a Driver</string>
+    <string name="become_a_passenger">Become a Passenger</string>
+
+    <string name="tourch_and_save">Tourch and Save!</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_ut_aliquam_purus_sit_amet_luctus_venenatis_lectus_magna_fringilla_urna">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.</string>
+    <string name="next">Next</string>
+    <string name="back"><u>Back</u></string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_ut_aliquam_purus_sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_an_estimate">Get an Estimate</string>
+    <string name="point_a">Point A</string>
+    <string name="_4140_parker_rd_allentown_dallas">4140 Parker Rd. Allentown, Dallas</string>
+    <string name="point_b">Point B</string>
+    <string name="_6391_elgin_st_celina_houseton">6391 Elgin St. Celina, Houseton</string>
+
+    <string name="enter_your_mobile_number">Enter your Mobile Number</string>
+    <string name="we_text_you_a_code_to_verify_your_number">We text you a code to verify your number.</string>
+    <string name="enter_the_code">Enter the code</string>
+    <string name="i_didn_t_receive_a_code">I didn’t receive a code</string>
+    <string name="confirm_code">Confirm Code</string>
+
+    <string name="let_us_know_how_to_properly_address_you">Let us know how to properly address you</string>
+    <string name="what_s_your_name">What’s your Name</string>
+
+    <string name="near_your_location">Near your location</string>
+    <string name="hi_jane">Hi Jane 👋</string>
+    <string name="enter_your_destination">Enter Your Destination</string>
+    <string name="myself">Myself</string>
+    <string name="now">Now</string>
+    <string name="inner_city_rides">Inner City Rides</string>
+    <string name="done">Done</string>
+    <string name="pick_up">Pick up</string>
+    <string name="drop_off">Drop Off</string>
+    <string name="set_location_on_map">Set location on map</string>
+    <string name="your_location">Your Location</string>
+    <string name="add_saved_place">Add saved place</string>
+    <string name="book_now">Book Now</string>
+
+    <string name="ride_details">Ride Details</string>
+    <string name="evan_is_on_his_way">Evan is on his way</string>
+    <string name="_3_min">3 min</string>
+    <string name="ride_cost">Ride Cost</string>
+    <string name="your_code">Your Code</string>
+    <string name="picking_up">Picking up</string>
+    <string name="_33_56">$33.56</string>
+    <string name="_665566">665566</string>
+    <string name="_4_45">4:45</string>
+    <string name="evan_guzman">Evan Guzman</string>
+    <string name="_4_5">4/5</string>
+    <string name="toyota_vios_8cf4829">Toyota Vios - 8CF4829</string>
+    <string name="white_color_with_ac_ride_tourchgo">White color with AC ride, TourchGo</string>
+    <string name="cancel_ride">Cancel Ride</string>
+    <string name="you_arrived">You Arrived</string>
+    <string name="droping_off">Droping off</string>
+    <string name="how_is_your_ride">How is your ride?</string>
+    <string name="submit">Submit</string>
+    <string name="discount">Discount</string>
+    <string name="tourch_go">Tourch Go</string>
+    <string name="_4_seats">4 Seats</string>
+    <string name="_3_min_away">3 min away</string>
+    <string name="edit_destination">Edit Destination</string>
+    <string name="share_ride_status">Share Ride Status</string>
+    <string name="split_fare">Split Fare</string>
+    <string name="any_pick_up_note">Any pick up note?</string>
+    <string name="share_your_ride">Share Your Ride</string>
+    <string name="your_ride_will_cost_less_if_another_rider_is_found_heading_towards_the_same_destination">Your ride will cost less if another rider is found heading towards the same destination</string>
+    <string name="swipe_up_for_more_detail">Swipe up for more detail</string>
+    <string name="go">Go</string>
+    <string name="luxury">Luxury</string>
+    <string name="shared">Shared</string>
+    <string name="choose_payment_method">Choose payment method</string>
+    <string name="finding_your_driver">Finding your driver…</string>
+    <string name="prefer_female_driver">Prefer Female Driver</string>
+    <string name="this_may_take_upto_2_min_please_wait_while_we_are_finding_your_ride">This may take up to 2 min, please wait while we are finding your ride</string>
+
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="our_routes">Our Routes</string>
+    <string name="freebies">Freebies</string>
+    <string name="referrals">Referrals</string>
+    <string name="drivers_list">Drivers List</string>
+    <string name="wallet">Wallet</string>
+    <string name="ride_history">Ride History</string>
+    <string name="my_trips">My Trips</string>
+
+
+    <string name="can_you_please_describe_what_happened">Can you please describe what happened?</string>
+    <string name="codyfisher_gmail_com">codyfisher@gmail.com</string>
+    <string name="_808_555_0111">(808) 555-0111</string>
+    <string name="trips">Trips</string>
+    <string name="preferences">Preferences</string>
+    <string name="about_tourch">About Tourch</string>
+    <string name="switch_account">Switch Account</string>
+    <string name="emergency">Emergency</string>
+    <string name="help_faqs">Help/FAQs</string>
+    <string name="log_out">Log Out</string>
+    <string name="feedback_center">Feedback Center</string>
+    <string name="business">Business</string>
+    <string name="drive">Drive</string>
+    <string name="tip_settings">Tip Settings</string>
+    <string name="safety_centre">Safety Centre</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="change_password">Change Password</string>
+    <string name="my_places">My Places</string>
+    <string name="notifications">Notifications</string>
+    <string name="talk_preference">Talk Preference</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="about_us">About Us</string>
+    <string name="emergency_contacts">Emergency contacts</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="terms_and_condition_text">Accept Tourch Terms and Conditions</string>
+    <string name="tnc_subtext">By selecting “I Agree” below, I have reviewed and agree to the <font fgcolor="#0084FE">Terms and Conditions</font>. I’m atleast 18 years of age.</string>
+    <string name="i_agree">I Agree</string>
+    <string name="pickup">PickUp</string>
+
+    <string name="invite_friends_and_get_up_to_1000_and_other_bonuses">Invite friends and get up to $1000 and other bonuses</string>
+    <string name="invite_and_earn_even_more">Invite and earn even more</string>
+    <string name="earn_10_ride_credit">Earn $10 ride credit for any family or friend that take a ride with your referral code</string>
+    <string name="code">Code:</string>
+    <string name="tourch178342355637536">tourch178342355637536</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="or_share_via">Or share via</string>
+    <string name="see_your_invite_history"><u>See Your Invite History</u></string>
+    <string name="earn_more_save_more_make_every_trip_count_and_get_more">Earn more, save more. Make every trip count and get more</string>
+    <string name="tourch_freebies">Tourch Freebies</string>
+    <string name="freebies_credit">Freebies Credit</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="_55_00">$55.00</string>
+    <string name="next_target">Next Target</string>
+    <string name="to_earn_5_credit_you_must_complete_your_next_target">To earn $5 credit, you must complete your next target.</string>
+    <string name="go_to_referrals"><u>Go to Referrals</u></string>
+
+
+    <string name="stop_2">Stop 2</string>
+    <string name="stop_3">Stop 3</string>
+    <string name="stop_4">Stop 4</string>
+    <string name="stop_5">Stop 5</string>
+    <string name="parking">Parking</string>
+    <string name="terminals">Terminals</string>
+    <string name="airlines">Airlines</string>
+
+    <array name="material_calendar_day_abbreviations_array">
+        <item>@string/material_calendar_sunday</item>
+        <item>@string/material_calendar_monday</item>
+        <item>@string/material_calendar_tuesday</item>
+        <item>@string/material_calendar_wednesday</item>
+        <item>@string/material_calendar_thursday</item>
+        <item>@string/material_calendar_friday</item>
+        <item>@string/material_calendar_saturday</item>
+    </array>
+
+    <string name="material_calendar_monday">MON</string>
+    <string name="material_calendar_tuesday">TUE</string>
+    <string name="material_calendar_wednesday">WED</string>
+    <string name="material_calendar_thursday">THU</string>
+    <string name="material_calendar_friday">FRI</string>
+    <string name="material_calendar_saturday">SAT</string>
+    <string name="material_calendar_sunday">SUN</string>
+    <string name="account">Account</string>
+    <string name="my_cards">My Cards</string>
+    <string name="start_verification">Start Verification</string>
+    <string name="verification">Verification</string>
+    <string name="step_1_driver_information">Step 1: Driver Information</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_ut_aliquam">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</string>
+    <string name="only_10_completed">Only 10% Completed</string>
+    <string name="_1_personal_information">1. Personal Information</string>
+    <string name="upload_picture">Upload picture</string>
+    <string name="email">Email</string>
+    <string name="_2_residential_address">2. Residential Address</string>
+    <string name="city">City</string>
+    <string name="address_2">Address 2</string>
+    <string name="address_1">Address 1</string>
+    <string name="i_currently_drive_or_have_driven_with_another_rideshare_company">I currently drive or have driven with another rideshare company</string>
+    <string name="state">State</string>
+    <string name="step_2_driver_licence">Step 2: Driver Licence</string>
+    <string name="select_one_if_you_have_a_car_or_don_t_have_a_car_to_proceed_further">Select one if you have a car or don’t have a car to proceed further.</string>
+    <string name="step_3_vehicle_information">Step 3: Vehicle Information</string>
+    <string name="vehicle_info">Your car must fulfil these criteria:
+        2013 or newer
+        4 doors
+        5-8 seats (including the driver\'s)
+        Not a taxi or stretch limousine
+        Not titled as salvage, non-repairable,rebuilt or any other
+        equivalent classification</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="car_make">Car Make</string>
+    <string name="vehicle_model">Vehicle Model</string>
+
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+
+</resources>

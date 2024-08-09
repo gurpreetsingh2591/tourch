@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mapVi"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-45dp"
+        tools:ignore="FragmentTagUsage" />
+
+    <ImageView
+        android:id="@+id/ivSecurityCenter"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_above="@+id/in_fullDetail"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_security"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+
+    <include
+        android:id="@+id/in_getStarted"
+        layout="@layout/layout_get_strat_intercity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/in_fullDetail"
+        layout="@layout/dialog_short_ride_detail"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

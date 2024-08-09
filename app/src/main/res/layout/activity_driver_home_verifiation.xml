@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnStartVerification"
+        android:layout_below="@+id/inToolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp">
+
+
+            <TextView
+                style="@style/mediumBlack20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/verification" />
+
+            <TextView
+                style="@style/lightDarkGray12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quam pharetra mi odio mattis nulla aliquam porttitor, Quam pharetra mi odio mattis." />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVerification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_home_verification" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartVerification"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/start_verification"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="@dimen/_10sdp"
+        app:rippleColor="@color/color38D169"
+        tools:ignore="PrivateResource" />
+
+</RelativeLayout>

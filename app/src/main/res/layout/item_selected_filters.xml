@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/bg_filter_selected"
+
+    android:layout_marginTop="@dimen/_10sdp"
+    android:paddingStart="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvFilter"
+        style="@style/regularBlack14"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:text="3 miles"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/green_cross"
+        android:layout_toEndOf="@+id/tvFilter"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"/>
+
+</RelativeLayout>

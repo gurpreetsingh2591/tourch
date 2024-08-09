@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <!--<color name="mtrl_textinput_default_box_stroke_color">#D0D6EA</color>-->
+
+    <color name="colorPrimary">#125952</color>
+    <color name="colorPrimary16">#2A125952</color>
+    <color name="colorPrimaryDark">#125952</color>
+    <color name="colorAccent">#125952</color>
+    <color name="colorStatus">#1C936D</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha50">#80000000</color>
+    <color name="black_alpha88">#E0000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#1762E4</color>
+    <color name="colorPrimary_alpha20">#33125952</color>
+    <color name="colorPrimary_alpha03">#08125952</color>
+
+
+    <color name="color38D169">#38D169</color>
+    <color name="color7C7D8F">#7C7D8F</color>
+    <color name="color32B67A">#32B67A</color>
+    <color name="color2832B67A">#2832B67A</color>
+    <color name="colorE5e5e5">#F1F1F1</color>
+    <color name="color3338D169">#3338D169</color>
+    <color name="color5D5D5D">#5D5D5D</color>
+    <color name="color5D5D5D_alpha69">#B05D5D5D</color>
+    <color name="color5D5D5D_alpha50">#805D5D5D</color>
+    <color name="color1F1F39">#1F1F39</color>
+    <color name="color2AC078">#2AC078</color>
+    <color name="colorD4D4D4">#D4D4D4</color>
+    <color name="color969696">#969696</color>
+    <color name="color13685A">#13685A</color>
+    <color name="colorD0D6EA">#D0D6EA</color>
+    <color name="colorE9E9ED">#E9E9ED</color>
+    <color name="colorFCC22F">#FCC22F</color>
+    <color name="color7B7B7C">#7B7B7C</color>
+    <color name="color8C8C9C">#8C8C9C</color>
+    <color name="color979797">#979797</color>
+
+    <color name="color1D956E">#1D956E</color>
+    <color name="colorFB7676">#FB7676</color>
+    <color name="colorE02020_alpha70">#B3E02020</color>
+    <color name="colorF2F2F2">#F2F2F2</color>
+    <color name="color434343">#434343</color>
+    <color name="color434343_alpha50">#80434343</color>
+
+    <color name="colorE1E1E1">#E1E1E1</color>
+    <color name="color6DD400">#6DD400</color>
+    <color name="color1C966E">#1C966E</color>
+    <color name="colorF7B500">#F7B500</color>
+    <color name="color545454">#545454</color>
+    <color name="colorE1E4F0">#E1E4F0</color>
+
+    <color name="colorF24750">#F24750</color>
+    <color name="color4DF1A1">#4DF1A1</color>
+    <color name="color77869E">#77869E</color>
+    <color name="colorCFDEDC">#CFDEDC</color>
+    <color name="colorEE5A55">#EE5A55</color>
+    <color name="colorE0E3EF">#E0E3EF</color>
+    <color name="colorDDDBDB">#DDDBDB</color>
+    <color name="colorEBEBEB">#EBEBEB</color>
+    <color name="colorEFEFEF">#EFEFEF</color>
+    <color name="colorA1A1A1">#A1A1A1</color>
+    <color name="colorCBCBCB">#CBCBCB</color>
+    <color name="colorF5FAF8">#F5FAF8</color>
+    <color name="colorD8D8D8">#D8D8D8</color>
+    <color name="colorE4E4E4">#E4E4E4</color>
+    <color name="color535353">#535353</color>
+    <color name="color2AC377">#2AC377</color>
+    <color name="colorF69731">#F69731</color>
+    <color name="colorD2D2D2">#D2D2D2</color>
+    <color name="colorEFEFF4">#EFEFF4</color>
+    <color name="colorDBE6E5">#DBE6E5</color>
+    <color name="color434852">#66434852</color>
+    <color name="color38A198">#38A198</color>
+    <color name="color1A8F6B">#1A8F6B</color>
+    <color name="color930303">#930303</color>
+    <color name="colorDCDCDC">#DCDCDC</color>
+    <color name="colorDEE7E0">#DEE7E0</color>
+    <color name="colorBFBFBF">#BFBFBF</color>
+    <color name="colorE2F3E9">#E2F3E9</color>
+    <color name="color910202">#910202</color>
+    <color name="colorE2F3E9_alpha50">#80E2F3E9</color>
+
+    <!--    //New Colors-->
+
+    <color name="color4F4F4F">#515269</color>
+
+    <color name="color4F4F4F_opacity50">#804F4F4F</color>
+    <color name="colorE6E6E6">#E6E6E6</color>
+    <color name="background">#F6F7FC</color>
+    <color name="colorPrimary_opacity40">#66125952</color>
+    <color name="color_grey">#A8A9B4</color>
+    <color name="colorC4C4C4">#C4C4C4</color>
+    <color name="colorE5293E">#E5293E</color>
+    <color name="color5B5B5B">#5B5B5B</color>
+    <color name="colorE02020">#E02020</color>
+    <color name="colorF1F2F5">#F1F2F5</color>
+    <color name="color042C5C">#042C5C</color>
+    <color name="colorF4FEFD">#F4FEFD</color>
+    <color name="colorFF001C">#FF001C</color>
+    <color name="color08000000">#08000000</color>
+    <color name="colorACB1C0">#ACB1C0</color>
+    <color name="colorF7FAF9">#F7FAF9</color>
+    <color name="colorDivider">#E4E9F2</color>
+    <color name="color007BB6">#007BB6</color>
+    <color name="color0084FE">#0084FE</color>
+    <color name="colorEAEAEA">#EAEAEA</color>
+    <color name="colorF5A624">#F5A624</color>
+    <color name="colorCAD4D2">#CAD4D2</color>
+    <color name="color6DD400_alpha3">#086DD400</color>
+
+
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+
+    <color name="itemHighlightColor">#00000000</color>
+    <color name="itemFocusedColor">#00000000</color>
+
+    <color name="defaultColor">#32B67A</color>
+
+
+
+</resources>
